@@ -1,0 +1,27 @@
+
+ input{
+    border: none;
+    margin: 10px 0;
+    padding: 10px 20px;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    outline: none;
+    caret-color: magenta;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    
+}
+ input::placeholder{
+    color:grey;
+     font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    
+}
+input:focus{
+    outline:  2px solid crimson;
+}

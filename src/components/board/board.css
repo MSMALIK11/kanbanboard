@@ -1,0 +1,41 @@
+.listOfCards{
+width: 100%;
+    display: flex;
+    gap: 10px;
+    /* margin: 20px 20px; */
+  justify-content: center;
+}
+
+.board{
+    min-width: fit-content;
+    width: 290px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+ 
+  
+}
+.board-top{
+    width: 100%;
+ 
+}
+
+.board-top-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.board-card-container{
+    background-color: #eee;
+  
+    padding: 7px;
+    width: 330px; 
+ 
+  height:70vh;
+    overflow-Y:scroll ;
+
+ 
+}
+
+
