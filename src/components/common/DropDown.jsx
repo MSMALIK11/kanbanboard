@@ -1,9 +1,8 @@
 import React from 'react'
-import { useRef } from 'react'
-import { useEffect } from 'react'
 
 
-const DropDown = ({children,onClose}) => {
+
+const DropDown = ({children}) => {
 //     const dropDownRef=useRef();
 // const handleClick= (e)=>{
 // if(dropDownRef && !dropDownRef.current.contains(e.target)){
