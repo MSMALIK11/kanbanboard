@@ -59,3 +59,25 @@ color:indigo;
 .card:hover .card-top-right-icon{
     opacity: 1;
 }
+
+.card-dropDown
+{
+     background-color: #ffffff;
+  padding: 5px 20px;
+ width: 120px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius:20px ;
+  -webkit-border-radius:20px ;
+  -moz-border-radius:20px ;
+  -ms-border-radius:20px ;
+  -o-border-radius:20px ;
+  text-transform: capitalize;
+  position: relative;
+}
+.card-dropDown .icon{
+ margin-top:3px ;
+
+}
+

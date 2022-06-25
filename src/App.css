@@ -78,3 +78,17 @@ background-color: #fff;
 .shadow{
      box-shadow: 0 0 10px rgba(0,0,0,0.2);
 }
+
+/* .icon{
+    background-color: #eee;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    padding: 2px;
+    opacity: 0.8;
+    cursor: pointer;
+} */

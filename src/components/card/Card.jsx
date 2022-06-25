@@ -1,22 +1,48 @@
-import React from 'react'
-import { Clock, Edit,MoreHorizontal } from 'react-feather'
+import React, { useState } from 'react'
+import './Card.css';
+import { Clock, Edit,MoreHorizontal, X } from 'react-feather'
 import Chip from '../chips/Chip';
-import './Card.css'
-const Card = () => {
+import DropDown from '../common/DropDown';
+
+const Card = ({ card, removeCard,bId,handleDragEnd,handleDragStart }) => {
+  const [show, setShow] = useState(true);
   return (
-    <div className="card">
+    <div
+      className="card"
+      style={{ position: "relative" }}
+      onMouseLeave={() => setShow(false)}
+      draggable
+      onDragEnd={()=>handleDragEnd(card.id,bId)}
+      onDragEnter={()=>handleDragStart(card.id,bId)}
+    >
       <div className="card-header">
-        <Chip color="indigo" title="frontend" />
-        <Chip color="green" title="urgent" />
-        <Chip color="magenta" title="backend" />
-        <Chip color="palevioletred" title="required" close />
-       
+      
+        {card &&
+          card.labels.map((item, i) => (
+            <Chip color={item.color} title={item.text} key={item + i} />
+          ))}
+
         <div className="card-top-right-icon">
-          <MoreHorizontal />
+          <MoreHorizontal onClick={() => setShow(!show)} />
+
+          {show && (
+            <DropDown>
+              <div
+                className="card-dropDown shadow"
+                style={{ cursor: "pointer" }}
+                onClick={() => removeCard(card.id, bId)}
+              >
+                <div>delete </div>
+                <div>
+                  <X size={20} color="crimson" className="icon" />
+                </div>{" "}
+              </div>
+            </DropDown>
+          )}
         </div>
       </div>
 
-      <p className="card-title">add a date functio and optimize</p>
+      <p className="card-title">{card?.title}</p>
 
       <div className="card-footer">
         <span>
@@ -30,6 +56,6 @@ const Card = () => {
       </div>
     </div>
   );
-}
+};
 
 export default Card

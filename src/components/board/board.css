@@ -1,41 +1,62 @@
-.listOfCards{
-width: 100%;
-    display: flex;
-    gap: 10px;
-    /* margin: 20px 20px; */
+.listOfCards {
+  width: 100%;
+  display: flex;
+  gap: 10px;
+  /* margin: 20px 20px; */
   justify-content: center;
 }
 
-.board{
-    min-width: fit-content;
-    width: 290px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
- 
-  
+.board {
+  min-width: fit-content;
+  width: 290px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
-.board-top{
-    width: 100%;
- 
-}
-
-.board-top-title{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.board-top {
+  width: 100%;
+  display: flex;
+  position: relative;
 }
 
-.board-card-container{
-    background-color: #eee;
-  
-    padding: 7px;
-    width: 330px; 
- 
-  height:70vh;
-    overflow-Y:scroll ;
-
- 
+.board-top-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
 }
 
+.board-top-more {
+  position: absolute;
+  right: 0;
+}
 
+.board-card-container {
+  background-color: #eee;
+
+  padding: 7px;
+  width: 330px;
+
+  height: 70vh;
+  overflow-y: scroll;
+}
+
+.board-top-dropdown {
+  background-color: #ffffff;
+  padding: 5px 20px;
+ width: 200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius:20px ;
+  -webkit-border-radius:20px ;
+  -moz-border-radius:20px ;
+  -ms-border-radius:20px ;
+  -o-border-radius:20px ;
+ 
+}
+.board-top-dropdown div:nth-of-type(1) {
+  text-transform: capitalize;
+  font-weight: bold;
+  color: grey;
+}

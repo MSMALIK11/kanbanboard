@@ -1,7 +1,16 @@
 import React from 'react'
 import './Input.css'
-const InputBox = () => {
-  return <input type="text" placeholder="title" className="shadow" />;
+const InputBox = ({placeText,name,handleChange}) => {
+  return (
+    <input
+      type="text"
+   
+      placeholder={placeText}
+      className="shadow"
+      onChange={handleChange}
+      name={name}
+    />
+  );
 }
 
 export default InputBox

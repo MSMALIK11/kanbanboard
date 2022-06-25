@@ -75,7 +75,7 @@
 }
 
 
-.editable_edit .add{
+ .add{
    background-color: #fff;
    width: 50px;
    height: 50px;
@@ -92,7 +92,7 @@
 }
 
 
-.editable_edit .close{
+ .close{
     background-color:crimson;
     color: #fff;
 }
