@@ -12,11 +12,11 @@ const Board = ({ board, addCard, removeCard, removeBoards, handleDragEnd,handleD
       <div className="board-top">
         <div className="board-top-title">
           <p>
-            {board?.title} <span> 2</span>
+            {board?.title} <span> {board?.cards.length}</span>
           
           </p>
         </div>
-        <div className="board-top-more">
+        <div className="board-top-more" style={{cursor:'pointer'}}>
           <MoreHorizontal color="grey" onClick={() => setShow(!show)} />
           {show && (
             <DropDown>
