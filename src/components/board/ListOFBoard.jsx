@@ -15,7 +15,6 @@ const ListOFBoard = () => {
   const addCard=(title,bId)=>{
   
 
-    alert('Add Card')
 const card={
   id:Date.now()+Math.random()*2,
   title,
