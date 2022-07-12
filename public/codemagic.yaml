@@ -10,9 +10,9 @@ windows-build:
       - name: Injecting env vars
         script: echo "REACT_APP_API_KEY=$REACT_APP_API_KEY" >> .env
       - name: Installing packages
-        script: yarn install
+        script: npm install
       - name: Building Applications
-        script: yarn run make
+        script: npm run make
 
     artifacts:
       - out/make/squirrel.windows/x64/*exe
